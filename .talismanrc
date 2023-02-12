@@ -1,0 +1,8 @@
+fileignoreconfig:
+- filename: scripts/set_env.sh
+  checksum: 034356a03b0977a3dfa92fa9349089ed7cda885a97c23e8ec8904c667c04064d
+- filename: .devcontainer/scripts/gcloud.sh
+  checksum: 6f729a453a79a3e2547e51ae6d027fed5e03c16761a061a4a090a4106ee16c9e
+- filename: .devcontainer/scripts/tailscale.sh
+  checksum: 866e25e5a5e55e92d4298bcbf5f0fec629f60109ef1d4271e8cc45af36c90852
+version: "0.0.0"

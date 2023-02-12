@@ -1,0 +1,30 @@
+{
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Set *default* container specific settings.json values on container create.
+      "settings": {
+        // Enables the project as a Deno project
+        "deno.enable": true,
+        // Enables Deno linting for the project
+        "deno.lint": true,
+        // Sets Deno as the default formatter for the project
+        "editor.defaultFormatter": "denoland.vscode-deno"
+      },
+
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "GitHub.copilot",
+        "eamodio.gitlens",
+        "github.vscode-pull-request-github",
+        "github.github-vscode-theme",
+        "ms-vsliveshare.vsliveshare",
+        "denoland.vscode-deno"
+      ]
+    }
+  },
+  //A command string or list of command arguments to run after the environment is created. Use && in a string to execute multiple commands.
+  "postCreateCommand": "/bin/bash ./.devcontainer/scripts/tools.sh >> ~/post-create-tools.log"
+}
